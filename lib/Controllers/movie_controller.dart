@@ -77,7 +77,7 @@ class MovieController extends GetxController {
     if (posterPath.isNotEmpty) {
       return 'https://image.tmdb.org/t/p/w185$posterPath';
     } else {
-      return ''; // or a default image URL
+      return '';
     }
   }
 
@@ -93,11 +93,9 @@ class MovieController extends GetxController {
         final data = json.decode(response.body);
         searchResults.assignAll(data['results']);
       } else {
-        // Handle error
         print('Error fetching search results');
       }
     } catch (e) {
-      // Handle exception
       print('Exception: $e');
     }
   }

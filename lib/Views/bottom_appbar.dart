@@ -8,7 +8,7 @@ import 'package:movieapp/Views/more/more_view.dart';
 import 'package:movieapp/Views/watch/main/watch_view.dart';
 
 class CustomBottomNavigationBar extends StatefulWidget {
-  const CustomBottomNavigationBar({Key? key}) : super(key: key);
+  const CustomBottomNavigationBar({super.key});
 
   @override
   State<StatefulWidget> createState() => _CustomBottomNavigationBarState();
@@ -27,15 +27,11 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
     ];
     final kBottmonNavBarItems = <BottomNavigationBarItem>[
       const BottomNavigationBarItem(
-          // activeIcon: Icon(Icons.dashboard),
-          icon: Icon(Icons.dashboard),
-          label: "Dashboard"),
+          icon: Icon(Icons.dashboard), label: "Dashboard"),
       const BottomNavigationBarItem(
           icon: Icon(Icons.play_arrow), label: "Watch"),
       const BottomNavigationBarItem(
           icon: Icon(Icons.browse_gallery), label: "Media Library"),
-      // const BottomNavigationBarItem(
-      //     icon: Icon(Icons.assistant), label: "Plans"),
       const BottomNavigationBarItem(
           icon: Icon(Icons.more_vert_sharp), label: "More"),
     ];

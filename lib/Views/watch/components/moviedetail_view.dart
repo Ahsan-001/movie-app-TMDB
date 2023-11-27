@@ -10,7 +10,7 @@ import 'package:movieapp/Views/watch/components/watchtrailer_view.dart';
 class MovieDetailView extends StatelessWidget {
   final MovieController movieController = Get.find();
 
-  MovieDetailView({Key? key}) : super(key: key);
+  MovieDetailView({super.key});
 
   @override
   Widget build(BuildContext context) {

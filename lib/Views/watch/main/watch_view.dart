@@ -64,10 +64,6 @@ class WatchView extends StatelessWidget {
                       height: ScreenUtil().setHeight(70.0),
                       width: ScreenUtil().setWidth(350.0),
                       decoration: BoxDecoration(
-                        borderRadius: const BorderRadius.only(
-                            // bottomLeft: Radius.circular(10),
-                            // bottomRight: Radius.circular(10),
-                            ),
                         gradient: LinearGradient(
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
@@ -81,8 +77,7 @@ class WatchView extends StatelessWidget {
                     ),
                     Positioned(
                       left: ScreenUtil().setWidth(20),
-                      bottom: ScreenUtil().setHeight(
-                          15), // Set bottom position using ScreenUtil
+                      bottom: ScreenUtil().setHeight(15),
                       child: Flexible(
                         fit: FlexFit.loose,
                         child: SizedBox(

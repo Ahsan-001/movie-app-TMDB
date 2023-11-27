@@ -5,7 +5,7 @@ import 'package:chewie/chewie.dart';
 import 'package:get/get.dart';
 
 class WatchTrailerView extends StatefulWidget {
-  const WatchTrailerView({Key? key}) : super(key: key);
+  const WatchTrailerView({super.key});
 
   @override
   _WatchTrailerViewState createState() => _WatchTrailerViewState();

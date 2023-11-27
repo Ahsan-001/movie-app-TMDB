@@ -307,16 +307,6 @@ class _SeatBookingScreenState extends State<SeatBookingScreen> {
                 ],
               ),
             ),
-
-            // const SizedBox(
-            //   height: 20,
-            // ),
-            // ElevatedButton(
-            //   onPressed: () {
-            //     setSelectedToBooked();
-            //   },
-            //   child: const Text("Booking"),
-            // ),
             const Spacer(),
             MaterialButton(
               height: ScreenUtil().setHeight(50),
